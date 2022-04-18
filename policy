@@ -1,0 +1,12 @@
+Đối với giao dịch mua bán :
+	Người mua : bank tiền trung gian
+	Người bán : giao src cho người mua khi trung gian đã nhận tiền
+Xử lý xung đột :  dựa vào quảng bá và yêu cầu sẽ đánh giá src có đúng như mô tả , nếu đúng -> người bán thắng , nếu sai -> người bán mất src
+
+Đối với giao dịch thuê kỹ thuật (chỉ nhận khi trung gian nắm căn bản về dự án để )
+	Khách : bank tiền trung gian
+	Dev : bank tiền đảm bảo (giá trị phụ thuộc vào thỏa thuận 2 bên)
+Xử lý xung đột :  dựa vào điều kiện hoàn thành + deadline (có thể gia hạn dựa theo trao đổi 2 bên nhưng sẽ có giới hạn)
+Giải quyết : 
+	nếu dev làm đúng theo thời hạn và đúng các mục trong thỏa thuận -> dev thắng -> bank tiền + tiền đảm bảo cho dev
+	nếu dev ko thực hiện đúng yêu cầu và câu kéo thời gian hay mất tích -> trả tiền cho khách (+ tiền đảm bảo sau 2-3 ngày ko thấy sự hồi đáp của dev) 
